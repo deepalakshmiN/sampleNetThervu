@@ -1,0 +1,8 @@
+ [HttpDelete]
+        public void Delete([FromQuery] string id)
+        {
+            Course course = new Course();
+           CourseService courseService = new CourseService();
+          courseService.deleteCourse(id, connection.connection);
+        
+        }     

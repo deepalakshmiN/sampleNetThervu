@@ -1,0 +1,19 @@
+ public void deleteCourse(string id, MySqlConnection connection)
+    {
+             try{
+           var command = new MySqlCommand("UPDATE course SET active = 0 WHERE id=uuid_to_bin(@id)", connection);
+             command.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@id",
+                DbType = DbType.Int32,
+                Value = id,
+            });
+            connection.Open();
+            command.ExecuteNonQuery();
+        }catch(MySqlException){
+                Console.WriteLine("connection not created");
+        }finally{
+            connection.Close();
+        }
+        // return null;
+    }

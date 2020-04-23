@@ -1,0 +1,155 @@
+Pojo/Model : 
+
+1. Course
+2. Parameter
+3. EmployeeCourse
+4. Employee
+5. Role
+6. EmployeeBatch
+7. Batch
+8. CourseAssessment
+9. AssessmentScore
+10. AssessmentSchedule
+11. Audit
+
+
+APIServices :
+
+1. CourseService
+
+    Methods : 
+            1. string Create(Course course)
+            2. Course Read(string Id)
+            3. IList<Course> ReadAll()
+            4. void Update(Course course)
+            5. void Delete(string Id)
+            
+2. ParameterService
+   
+    Methods :
+            1. string Create(Parameter parameter)
+            2. Parameter Read(string Id)
+            3. IList<Parameter> ReadAll()
+            4. void Update(Parameter parameter)
+            5. void Delete(string Id)
+            
+3. EmployeeCourseService
+      
+    Methods :
+            1. string Create(EmployeeCourse employeeCourse)
+            2. EmployeeCourse Read(string Id)
+            3. IList<EmployeeCourse> ReadAll()
+            4. void Update(EmployeeCourse employeeCourse)
+            5. void Delete(string Id)
+              
+4. EmployeeService
+   
+    Methods :
+            1. string Create(Employee employee)
+            2. Employee Read(string Id)
+            3. IList<Employee> ReadAll()
+            4. void Update(Employee employee)
+            5. void Delete(string Id)
+               
+5. RoleService
+   
+    Methods :
+            1. string Create(Role role)
+            2. Role Read(string Id)
+            3. IList<Role> ReadAll()
+            4. void Update(Role role)
+            5. void Delete(string Id)
+            
+6. EmployeeBatchService
+   
+    Methods :
+            1. string Create(EmployeeBatch employeeBatch)
+            2. EmployeeBatch Read(string Id)
+            3. IList<EmployeeBatch> ReadAll()
+            4. void Update(EmployeeBatch employeeBatch)
+            5. void Delete(string Id)
+            6. IList<EmployeeBatch> Search()
+            
+7. BatchService
+   
+    Methods :
+            1. string Create(Batch batch)
+            2. Batch Read(string Id)
+            3. IList<Batch> ReadAll()
+            4. void Update(Batch batch)
+            5. void Delete(string Id)
+            
+8. CourseAssessmentService
+   
+    Methods :
+            1. string Create(CourseAssessment courseAssessment)
+            2. CourseAssessment Read(string Id)
+            3. IList<CourseAssessment> ReadAll()
+            4. void Update(CourseAssessment courseAssessment)
+            5. void Delete(string Id)
+            
+9. AssessmentScoreService
+   
+    Methods : 
+            1. string Create(AssessmentScore assessmentScore)
+            2. AssessmentScore Read(string Id)
+            3. IList<AssessmentScore> ReadAll()
+            4. void Update(AssessmentScore assessmentScore)
+            5. void Delete(string Id)
+            6. IList<AssessmentScore> Search()
+            
+10. AssessmentScheduleService    
+    
+    Methods :
+            1. string Create(AssessmentSchedule assessmentSchedule)
+            2. AssessmentSchedule Read(string Id)
+            3. IList<AssessmentSchedule> ReadAll()
+            4. void Update(AssessmentSchedule assessmentSchedule)
+            5. void Delete(string Id)
+            6. IList<AssessmentSchedule> Search()
+    
+11. AuditService
+    
+    Methods :
+            1. string Create(Audit audit)
+            2. Audit Read(string Id)
+            3. IList<Audit> ReadAll()
+            4. void Update(Audit audit)
+            5. void Delete(string Id)
+            
+12. ConnectionService
+
+    Methods : 
+            1. MySqlConnection Init()
+            2. void Close(bool flag)
+            
+13. AppException
+
+14. ErrorCodes
+
+15. EnumOperation
+
+16. BulkInsertService                              // doubt
+
+
+Controllers :
+
+1. CourseController
+2. ParameterController
+3. EmployeeCourseController
+4. EmployeeController
+5. RoleController
+6. EmployeeBatchController
+7. BatchController
+8. CourseAssessmentController
+9. AssessmentScoreController
+10. AssessmentScheduleController
+11. AuditController
+
+
+Filters :
+
+1. ErrorFilter                                     // doubt
+2. AuthenticationFilter                            // doubt      
+3. AuthorizationFilter                             // doubt
+4. TransactionFilter                               // doubt
